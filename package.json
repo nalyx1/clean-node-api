@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:staged": "jest",
+    "test:staged": "jest --passWithNoTests",
     "prepare": "husky"
   },
   "keywords": [],
@@ -30,8 +30,7 @@
     "*.ts": [
       "prettier --write .",
       "eslint 'src/**' --fix",
-      "npm run test:staged",
-      "git add"
+      "npm run test:staged"
     ]
   }
 }
